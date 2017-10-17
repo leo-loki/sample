@@ -9,22 +9,29 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="https://www.i-studio.jp/css/lib/html5resetter.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/html5resetter.css">
 
-<title>【Webサンプル】CSSだけで作るパララックス効果</title>
+<title>サイトテンプレート（ビジュアル系）</title>
 
 <!-- IE set HTML 5 tag -->
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
 <script type="text/javascript" src="./js/html5shiv.js"></script>
 <![endif]-->
+
 <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakura.js"></script> 
 
-<link rel="stylesheet" type="text/css" href="https://www.i-studio.jp/css/general.css">
+<link rel="stylesheet" type="text/css" href="../css/general.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="https://www.i-studio.jp/css/lib/morisawa.css">
-<link rel="stylesheet" type="text/css" href="https://www.i-studio.jp/css/lib/toggle.css">
-<link rel="stylesheet" type="text/css" href="https://www.i-studio.jp/css/lib/genericons/genericons.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/morisawa.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/toggle.css">
+<link rel="stylesheet" type="text/css" href="../css/lib/genericons/genericons.css">
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load("jquery", "1");
+</script>
+<script type="text/javascript" src="js/script.js"></script>
 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -38,18 +45,17 @@
 <div id="wrap"><!-- #wrap -->
 
 <header id="common-header">
-<h1><a href="https://www.i-studio.jp/"><img src="https://www.i-studio.jp/img/logo.svg" alt="i Creative Studio."></a></h1>
+<h1><a href="https://www.i-studio.jp/"><img src="../img/logo.svg" alt="i Creative Studio."></a></h1>
 
 <nav id="nav-main" class="toggle">
 <input type="checkbox" id="mainMenu" class="switch">
 <ul class="menu1 fade">
-<li><a href="https://www.i-studio.jp/">HOME</a></li>
+<li><a href="#">HOME</a></li>
 <li><a href="#sec01">SECTION 1</a></li>
 <li><a href="#sec02">SECTION 2</a></li>
 <li><a href="#sec03">SECTION 3</a></li>
 <li><a href="#sec04">SECTION 4</a></li>
 <li><a href="#sec05">SECTION 5</a></li>
-<li id="info01">&nbsp;</li>
 </ul>
 <label for="mainMenu"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></label>
 </nav>
@@ -106,7 +112,7 @@
 	<div class="text-wrap">
 	<h3>Section 4 - Layer base. </h3>
 	<p>４番目のセクション。BASEレイヤー</p>
-	<p>ブラウザの対応状況が整っていないため、CSSでのスムールスクロールが実現せず…<br>百歩譲ってjQueryでスムールスクロールを組み込もうとするも正常に動作せず。</p>
+	<p>ブラウザの対応状況が整っていないため、CSSでのスムールスクロールが実現せず…<br>百歩譲ってjQueryでスムールスクロールを組み込んでみたものの…</p>
 	</div>
 </article></div>
 <div class="layer rear">
@@ -138,7 +144,7 @@
 	<div class="text-wrap">
 	<h3>Section 5 - Layer base.</h3>
 	<p>５番目のセクション。BASEレイヤー</p>
-	<p>中途半端な状態で断念。<br>jQueryなしで自由に制作できる日はいつ来るのか…。</p>
+	<p>中途半端じゃないですか。<br>jQueryなしで自由に制作できる日はいつ来るんでしょ…。</p>
 	</div>
   </article></div>
 </section>
@@ -151,7 +157,7 @@
 
 <nav class="flexbox">
 <ul class="flexbox">
-<li><a href="https://www.i-studio.jp/"><span class="genericon genericon-home"></span></a></li>
+<li><a href="#"><span class="genericon genericon-home"></span></a></li>
 <li><a href="#sec01">SECTION 1</a></li>
 <li><a href="#sec02">SECTION 2</a></li>
 <li><a href="#sec03">SECTION 3</a></li>

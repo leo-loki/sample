@@ -30,7 +30,7 @@ dl {} dl dt {} dl dd {}
 	min-height: 100%; height: auto; max-height: 100vh;
 	background-size: 100% auto;
 	background-attachment: fixed;
-	overflow-x: hidden; overflow-y: auto; /* これが必要なためjQueryスムーズスクロールが効かない */
+	overflow-x: hidden; overflow-y: scroll; /* これが必要なためjQueryスムーズスクロールが上手く効かない */
 	-webkit-perspective: 600px;
 	-moz-perspective: 600px;
 	-o-perspective: 600px;
@@ -84,40 +84,49 @@ dl {} dl dt {} dl dd {}
 	z-index:1;
 }
 #contents section#sec01 { z-index: 5;
-} #contents section#sec02 { z-index: 4;
-} #contents section#sec03 { z-index: 3;
+} #contents section#sec02 { z-index: 3;
+} #contents section#sec03 { z-index: 4;
 } #contents section#sec04 { z-index: 2;
 } #contents section#sec05 { z-index: 1; }
 /* /parallax setting */
 
 /* Parallax #contents section settings */
 #contents {
-	background-image: url(../../img/sample/illust1701.jpg);
+	background-image: url(https://www.i-studio.jp/img/sample/illust1701.jpg);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 } #contents section {
-	background-color: rgba(255,255,255,0.60); color: #000;
-	text-shadow: 0 1px 1px #FFF;
-} #contents section:nth-child(2) {
 	background-color: rgba(0,0,0,0.60); color: #FFF;
 	text-shadow: 0 1px 1px #000;
+	border-color: #FFF;
+} #contents section#sec05 {
+	background-color: rgba(255,255,255,0.60); color: #000;
+	text-shadow: 0 1px 1px #FFF;
+	border-color: #333;
 } #contents section .layer {
 	text-align: center;	vertical-align:middle;
-} #contents section#sec01 .base, #contents section#sec03 .base {
-	background-image: url(../../img/sample/illust1701.jpg);
+} #contents section#sec01 .base {
+	background-image: url(https://www.i-studio.jp/img/sample/photo1710as003.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+} #contents section#sec03 .front {
+	background-color: rgba(255,255,255,0.60); color: #333;
+	text-shadow: 0 1px 1px #FFF;
+	border-color: #333;
+} #contents section#sec03 .base {
+	background-image: url(https://www.i-studio.jp/img/sample/illust1701.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-} #contents section#sec03 .base {
-	background-position: center center;
 } #contents section#sec02 .rear {
-	background-image: url(../../img/sample/illust1701make01.jpg);
+	background-image: url(https://www.i-studio.jp/img/sample/illust1701make01.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 } #contents section#sec05 .base {
-	background-image: url(../../img/sample/photo1301c003.jpg);
-	background-position: center top;
+	background-image: url(https://www.i-studio.jp/img/sample/photo1710as002.jpg);
+	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -133,15 +142,15 @@ dl {} dl dt {} dl dd {}
 } #contents h1 {
 	margin-bottom: 1em; padding-bottom: 0.5em;
 	font-size: 1.6em;
-	border-bottom: 4px solid #4b3d37;
+	border-bottom: 2px solid;
 } #contents h2 {
 	margin-bottom: 1em; padding-bottom: 0.5em;
 	font-size: 1.4em;
-	border-bottom: 2px solid #4b3d37;
+	border-bottom: 2px solid;
 } #contents h3 {
 	margin-bottom: 1em; padding-bottom: 0.5em;
 	font-size: 1.2em;
-	border-bottom: 1px dashed #4b3d37;
+	border-bottom: 1px dashed;
 } #contents p {
 	padding-bottom:1em;
 } #contents ul {
@@ -152,10 +161,13 @@ dl {} dl dt {} dl dd {}
 	top: 6em;
 } #contents section#sec01 .text-wrap {
 	position: absolute;
-	top: 50%; left: 4em;
-	margin-top: -5em; margin-left: 0;
+	top: 40%; right: 58%;
+	margin-left: 1em;
+} #contents section#sec05 .text-wrap {
+	margin-left: auto; margin-right: 5em;
+	width: 40%;
 } #contents section#sec05 p {
-	width: 33%; margin: 0 auto;
+	margin: 0 1em;
 	line-height: 2em;
 	text-align: justify;
 } 

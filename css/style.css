@@ -104,7 +104,9 @@ dl {} dl dt {} dl dd {}
 	text-shadow: 0 1px 1px #FFF;
 	border-color: #333;
 } #contents section .layer {
-	text-align: center;	vertical-align:middle;
+	width: 100%; height: 100%;
+	text-align: center;
+	display: table;
 } #contents section#sec01 .base {
 	background-image: url(https://www.i-studio.jp/img/sample/photo1710as003.jpg);
 	background-position: right top;
@@ -131,9 +133,9 @@ dl {} dl dt {} dl dd {}
 	background-size: cover;
 }
 #contents .layer article {
-	position: relative;
-	width: 100%; height: 100%;
-	margin: 0; padding: 0;
+	margin: auto;
+	text-align: center; vertical-align: middle;
+	display: table-cell;
 }
 #contents h1, #contents h2, #contents h3,
 #contents h4, #contents h5, #contents h6,
@@ -157,20 +159,18 @@ dl {} dl dt {} dl dd {}
 	list-style:none;
 }
 #contents .text-wrap {
-	position: relative;
-	top: 6em;
+	margin: auto;
+	width: auto; max-width: 90%;
+	display: table;
 } #contents section#sec01 .text-wrap {
-	position: absolute;
-	top: 40%; right: 58%;
-	margin-left: 1em;
+	margin-left: 4em;
 } #contents section#sec05 .text-wrap {
-	margin-left: auto; margin-right: 5em;
-	width: 40%;
+	margin-right: 2em;
 } #contents section#sec05 p {
 	margin: 0 1em;
 	line-height: 2em;
 	text-align: justify;
-} 
+}
 /* /Parallax #contents section settings */
 
 /* other local class */

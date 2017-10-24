@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+
+/*------------------------------
+- TOP DOWN - ( PC -> Mobile )
+------------------------------*/
+
+@media screen and (max-width: 768px) {
+  /* - Mobile Landscape & Tablet Portrait */
+  nav ul li:nth-child(6) {
+    display: none;
+  }
+  nav ul li.more {
+   display: block; opacity: 1;
+  }
+  nav ul ul {
+    display: block;
+  }
+  nav ul ul li:nth-child(6) {
+    display: block;
+  }
+li.home {
+  flex:0.4;
+  background-color: #555;
+}
+.icons, .more { padding: 3em 0 .75em; }
+.icons::before, .toggle-icon {
+	top:0; margin-top: 1em; left: 50%; margin-left: -10px;
+}
+} /* /- Mobile Landscape & Tablet portrait */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  /* Mobile Landscape */
+} /* /Mobile Landscape */
+@media screen and (max-width: 560px) {
+  nav ul li {
+    width: 20%;
+  }
+  nav ul li:nth-child(5) {
+    display: none;
+  }
+  nav ul li.home {
+    width: 20%;
+  }
+  nav ul ul li:nth-child(5) {
+    display: block;
+  }
+}
+@media screen and (max-width: 440px) {
+  nav ul li {
+    width: 25%;
+  }
+  nav ul li:nth-child(4) {
+    display: none;
+  }
+  nav ul li.home {
+    width: 25%;
+  }
+  nav ul ul li:nth-child(4) {
+    display: block;
+  }
+}
+@media screen and (max-width: 414px) {
+  /* Mobile L Portrait */
+} /* /Mobile L Portrait */
+@media screen and (max-width: 360px) {
+  nav ul li {
+    width: 28%;
+  }
+  nav ul li.home {
+    width: 16%;
+  }
+}
+
+/***********************************
+ end of Responsive Setup
+***********************************/

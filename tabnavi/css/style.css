@@ -1,0 +1,199 @@
+/* CSS Document */
+
+@import url("https://fonts.googleapis.com/css?family=Cormorant+SC|Didact+Gothic|Prata");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Didact Gothic", sans-serif;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+a,
+img {
+  outline: none;
+}
+nav {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1vw;
+}
+nav * {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+ul li {
+  position: relative;
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+	text-align: center;
+}
+li.home {
+  flex:0.3;
+  background-color: #555;
+	text-align: center;
+	background-image: url("https://www.i-studio.jp/favicon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+li.home a {
+	text-indent: -9999px;
+}
+ul li.home a:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+li.more {
+  background-color: #555;
+  opacity: 0; display: none;
+}
+ul a {
+  padding: 2em 0;
+  display: block;
+  color: #fff;
+	text-align: center;
+}
+ul a:hover {
+  background-color: #999;
+}
+ul ul {
+  padding-top: 4.5em;
+  height: 0;
+	font-size: 0.8rem;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}
+ul ul::before {
+  position: absolute;
+  left: 50%;
+  top: 4em;
+  margin-left: -0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  background-color: #999;
+  content: "";
+  transform: rotate(-45deg);
+}
+nav ul ul li {
+  position: relative;
+  width: 100%;
+  display: none;
+  background-color: #999;
+}
+ul ul li:nth-child(1) {
+  font-size: 0;
+  line-height: 0;
+  height: 4px;
+  display: block;
+}
+ul ul li:nth-child(even) {
+  background-color: #888;
+}
+ul li.home:hover,
+ul ul li {
+  background-color: #999;
+}
+ul ul a:hover {
+  background-color: #333;
+}
+ul li:hover > ul {
+  height: auto;
+  opacity: 1;
+}
+.icons { padding-left: 20px; }
+.icons::before, .toggle-icon {
+  position: absolute;
+  margin:0;
+	top:50%; margin-top: -10px; margin-left: -24px;
+	content: "";
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.toggle-icon {
+  background-color: transparent;
+}
+.toggle-icon span {
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -10px;
+  font-size: 0;
+  line-height: 0;
+  width: 142%;
+  height: 2px;
+}
+.toggle-icon span:first-child {
+  top: 2px;
+}
+.toggle-icon span:nth-child(2) {
+  top: 50%;
+  margin-top: -1px;
+}
+.toggle-icon span:last-child {
+  bottom: 2px;
+}
+ul li.more:hover > .toggle-icon span:first-child {
+  -webkit-transform: translateX(-4px) translateY(7px) rotate(-45deg);
+  -moz-transform: translateX(-4px) translateY(7px) rotate(-45deg);
+  -o-transform: translateX(-4px) translateY(7px) rotate(-45deg);
+  -ms-transform: translateX(-4px) translateY(7px) rotate(-45deg);
+  transform: translateX(-4px) translateY(7px) rotate(-45deg);
+}
+ul li.more:hover > .toggle-icon span:nth-child(2) {
+  opacity: 0;
+}
+ul li.more:hover > .toggle-icon span:last-child {
+  -webkit-transform: translateX(-4px) translateY(-7px) rotate(45deg);
+  -moz-transform: translateX(-4px) translateY(-7px) rotate(45deg);
+  -o-transform: translateX(-4px) translateY(-7px) rotate(45deg);
+  -ms-transform: translateX(-4px) translateY(-7px) rotate(45deg);
+  transform: translateX(-4px) translateY(-7px) rotate(45deg);
+}
+ul li ::before {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+ul li:nth-child(2) ::before {
+	background-image: url(../icons/chrome.svg);
+}
+ul li:nth-child(3) ::before {
+	background-image: url(../icons/edge.svg);
+}
+ul li:nth-child(4) ::before {
+	background-image: url(../icons/firefox.svg);
+}
+ul li:nth-child(5) ::before {
+	background-image: url(../icons/windows8.svg);
+}
+ul li:nth-child(6) ::before {
+	background-image: url(../icons/finder.svg);
+}

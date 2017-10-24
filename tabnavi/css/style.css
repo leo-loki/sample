@@ -177,23 +177,3 @@ ul li.more:hover > .toggle-icon span:last-child {
   -ms-transform: translateX(-4px) translateY(-7px) rotate(45deg);
   transform: translateX(-4px) translateY(-7px) rotate(45deg);
 }
-ul li ::before {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-ul li:nth-child(2) ::before {
-	background-image: url(../icons/chrome.svg);
-}
-ul li:nth-child(3) ::before {
-	background-image: url(../icons/edge.svg);
-}
-ul li:nth-child(4) ::before {
-	background-image: url(../icons/firefox.svg);
-}
-ul li:nth-child(5) ::before {
-	background-image: url(../icons/windows8.svg);
-}
-ul li:nth-child(6) ::before {
-	background-image: url(../icons/finder.svg);
-}

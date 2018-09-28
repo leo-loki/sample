@@ -4,3 +4,11 @@
 _notes/
 /bower_components/
 /node_modules/
+
+# DW Dreamweaver added files
+_notes
+_compareTemp
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno

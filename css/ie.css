@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* ---------------------------------------------------------------------- */
+/*                                                                        */
+/*  					                  Internet Explorer CSS. 			      	  		          */
+/*                                                                        */
+/*                												Encode : UTF-8  												                */
+/*                                                                        */
+/* ---------------------------------------------------------------------- */
+
+/* 
+//	behavior: url(ie-css3.htc);
+// behavior: url(css3shadow.htc); を併用すると	Conflict するので注意
+// behavior: url(border-radius.htc); と behavior: url(css3shadow.htc); の併用は可
+*/
+
+body {
+	font-family:"メイリオ", Meiryo, Arial, sans-serif;
+	_font-family:"ＭＳ Ｐゴシック", "MS PGothic", Arial, sans-serif;
+}

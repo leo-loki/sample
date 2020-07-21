@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* ---------------------------------------------------------------------- */
+/*                                                                        */
+/*  					                     Main Stylesheet. 	           	  		          */
+/*                                                                        */
+/*                Ver.1.11.1 (Last revision : 2012.02.16)                 */
+/*                                                                        */
+/*                												Encode : UTF-8  												                */
+/*                                                                        */
+/* ---------------------------------------------------------------------- */
+
+/* ===== all pages ===== */
+
+body {
+	position:relative;
+	min-width:980px;
+	overflow-x: hidden;
+ /* CSS3 */
+ background:-webkit-gradient(linear, left top, left bottom, from(#9CF), to(#FFF)); /* Chrome, Safari */
+ background:-moz-linear-gradient(center top, #9CF, #FFF) repeat scroll 0 0 transparent; /* Firefox */
+ background:-o-linear-gradient(#9cf,#fff); /* Opera */
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99CCFF', endColorstr='#FFFFFF'); /* IE */
+}
+body:lang(ja) {	font:normal 12px/160% Meiryo, "MS PGothic", Osaka, "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+#wrap { background-color:none; }
+
+#all {
+	position:relative;
+	width:960px;
+	margin:0 auto; padding:50px 10px 10px 10px;
+	background-color:#FFF;
+ box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	-o-box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	-ms-box-shadow:  0px 0px 10px rgba(0,0,0,.5);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+
+html>body #all { height:auto; min-height:100%; }
+
+a { color: #36F; }
+a:hover { color: #C33; }
+
+h1, h2, h3, h4, h5, h6 { color:#333; }
+
+
+/* ===== all pages id & class ===== */
+
+body.white-base {
+	background-color:#FFF;
+	color:#555;
+}
+body.black-base {
+	background-color:#000;
+	color:#FFF;
+}
+
+/* ----- HEADER ----- */
+header {
+	width:100%;
+	background-color:#FFF; color:#333;
+	margin-bottom:10px;
+	display:block;
+ /* CSS3 */
+ background: -webkit-gradient(linear, left top, left bottom, from(#9CF), to(#FFF));
+ background: -moz-linear-gradient(center top, #9CF, #FFF) repeat scroll 0 0 transparent;
+ background: -o-linear-gradient(#9CF, #FFF);
+ background: -ms-linear-gradient(top, #99CCFF, #FFFFFF); /* IE10+ */
+/* IE8-9 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#99CCFF', endColorstr='#FFFFFF', GradientType=0)";
+/* IE5.5-7 */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99CCFF', endColorstr='#FFFFFF', GradientType=0); */
+/*	border-radius: 8px;
+	-moz-border-radius: 8px;	-webkit-border-radius: 8px;	-khtml-border-radius: 8px;
+	-o-border-radius: 8px;	-ms-border-radius: 8px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);*/
+}
+header h1 { font-size:64px; padding:15px 0 5px 15px; }
+header h2 { padding:5px 0 10px 15px; }
+header a, header a:visited, header a:active { color:#000; }
+header a:hover { color: #600; }
+header #header_wrap {}
+/* ----- /HEADER ----- */
+
+/* ----- FOOTER ----- */
+footer {
+	width:auto;
+	padding:10px;
+	background-color:#E4E4E4;
+	border-radius: 6px;
+	-moz-border-radius: 6px;	-webkit-border-radius: 6px;	-khtml-border-radius: 6px;
+	-o-border-radius: 6px;	-ms-border-radius: 6px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+footer #footer_wrap {	text-align:left; }
+/* ----- /FOOTER ----- */
+
+/* ----- TOP MENU ----- */
+
+nav#topmenu {
+	position: fixed;
+	top:0; left:0;
+	width:100%; min-width:980px; height:40px;
+	background: rgba(0,0,0,0.7);
+	color:#999; line-height:40px;
+ white-space: nowrap;
+ overflow: hidden; text-overflow: ellipsis;
+	display:block; z-index:999;
+ box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+ -webkit-box-shadow: 0px 0 10px rgba(0,0,0,.8);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	-o-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	-ms-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	/* ie-css3.htc を使うとIE6-8の影がおかしくなる */
+}
+nav#topmenu a {	color:#FEE; display:inline; }
+
+h4#left {
+	position: fixed;
+	top:60px; left:-80px;
+	padding:5px 100px;
+	background-color: #39F;
+	color:#FFF; text-align:center;
+	display:inline-block;
+ box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+ -webkit-box-shadow: 2px 2 8px rgba(0,0,0,.8);
+ -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-o-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-ms-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+}
+h4#right {
+	position: fixed;
+	top:60px; right:-80px;
+	padding:5px 100px;
+	background-color: #039;
+	color:#FFF; text-align:center;
+	display:inline-block;
+ box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+ -webkit-box-shadow: 2px 2 8px rgba(0,0,0,.8);
+ -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-o-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-ms-box-shadow: 2px 2px 8px rgba(0,0,0,.8);
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+h4#left a, h4#right a { color:#FFF; }
+h4#left a:hover { color:#CFF; }
+h4#right a:hover { color:#FCF; }
+
+/* ----- /TOP MENU ----- */
+
+/* ----- MAIN MENU ----- */
+nav#main.grade {
+	margin-bottom:10px; margin-left:-1px;
+	padding:0;
+	background-color:#EEE;
+	color:#CCC;
+	border:1px solid #CCC;	border-bottom:none;
+	display:block;
+ /* CSS3 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+	background: -moz-linear-gradient(center top, #EEE, #CCC) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(#EEE, #CCC);
+ background: -ms-linear-gradient(top, #EEEEEE, #CCCCCC); /* IE10+ */
+/* IE8-9 */
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#CCCCCC', GradientType=0)";
+/* IE5.5-7 */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#CCCCCC', GradientType=0); */
+	border-radius: 6px;
+	-moz-border-radius: 6px;	-webkit-border-radius: 6px;	-khtml-border-radius: 6px;
+	-o-border-radius: 6px; -ms-border-radius: 6px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+nav#main.grade h3 {
+	border-radius:6px 0 0 6px / 6px 0 0 6px;
+	-moz-border-radius:6px 0 0 6px / 6px 0 0 6px; -webkit-border-radius:6px 0 0 6px / 6px 0 0 6px;	-khtml-border-radius:6px 0 0 6px / 6px 0 0 6px;
+	-o-border-radius:6px 0 0 6px / 6px 0 0 6px; -ms-border-radius:6px 0 0 6px / 6px 0 0 6px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+/* Lv1 */
+nav#main.grade ul li {	font-size: 13px;	border-left:1px solid #CCC; }
+nav#main.grade ul li.home a {
+	background-color: #432; color: #EC9;
+ background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#432));
+ background: -moz-linear-gradient(center top , #000, #432) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(#000, #432);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#443322');
+	display: block;
+}
+nav#main. a:hover, li.home a:hover, nav#main.grade ul li:hover > nav#main.grade ul li a {
+	background-color: #000;
+ background: -webkit-gradient(linear, left top, left bottom, from(#432), to(#000));
+ background: -moz-linear-gradient(center top , #432, #000) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(#432, #000);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#443322', endColorstr='#000000');
+	display: block;
+}
+/* Lv2 */
+nav#main.grade ul li ul {
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-o-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-ms-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+/* ----- / MAIN MENU ----- */
+
+
+/* ----- CONTENTS ----- */
+
+#container{	width:100%; height:100%;	margin-top:-5px;}
+
+article {
+	float:left;
+	top:40px;
+	width:620px;
+	display:block;
+}
+article section { width:100%; padding:10px 10px 10px 0; }
+
+section ul { margin:0 10px 0 20px; }
+section ul li {
+	margin-bottom:5px; padding-bottom:5px;
+	border-bottom:1px dotted #CCC;
+}
+section ul li h4 { color:#333; }
+section ul li h4 a { color: #039; }
+
+aside {
+	top:40px;
+	width:240px;
+	padding:10px;
+	background-color:#EEE;
+	color:#333;
+	display:block;
+}
+aside h2 {
+	width:auto;
+	padding:5px 10px;
+	background-color:#777;
+	font-size:16px;
+	color:#FFF;
+	display:block;
+	border-color: #555 #CCC #CCC #555;
+	border-style: solid;
+	border-width: 2px;
+}
+aside h2 a { color: #FCF; }
+aside p { padding:10px; }
+aside h3 {
+ width: auto;
+ margin-bottom: 10px;
+ padding: 5px 8px;
+	font-size:14px;
+	color:#333;
+	border-color: #CCC #666 #888 #AAA;
+	border-style: solid;
+	border-width: 2px;
+}
+aside h5 {
+	width:auto;
+	margin-top:5px;	padding:2px 8px;
+	background-color:#DDD;
+	font-size:12px; line-height:2em; color:#333;
+	font-weight:normal; letter-spacing: normal;
+	border-color: #333 #CCC #FFF #555;
+	border-style: solid;
+	border-width: 1px;
+	display:block;
+}
+aside dl {}
+aside dl dt {}
+aside dl dd {
+	margin-bottom:5px; padding-bottom:5px;
+	border-bottom:1px dotted #CCC;
+}
+aside h4 { color:#333; }
+aside h4 a { color: #039; }
+
+/* ----- /CONTENTS ----- */
+
+
+/* ===== top page ===== */
+
+/* ----- INFORMATION & MESSAGE ----- */
+#topbanner {}

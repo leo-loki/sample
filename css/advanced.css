@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------------------- */
+/*                                                                        */
+/*                   Frequent use & CSS3 Stylesheet.                      */
+/*                                                                        */
+/*               Ver.1.15.12 (Last revision : 2015.12.26)                 */
+/*                                                                        */
+/*                            Encode : UTF-8                              */
+/*                                                                        */
+/* ---------------------------------------------------------------------- */
+
+.floatclear {	clear: both; }
+
+.clear { height:0; }
+.clear:after {
+	clear:both;
+	width:100%; height:0;
+	content:"";
+	font-size:0; line-height:0;
+	display:table;
+}
+
+/* ===== radius ===== */
+
+.radius4 {
+	border-radius: 4px; -moz-border-radius: 4px;	-webkit-border-radius: 4px;
+	-o-border-radius: 4px; -ms-border-radius: 4px;	-khtml-border-radius: 4px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+.radius6 {
+	border-radius: 6px; -moz-border-radius: 6px;	-webkit-border-radius: 6px;
+	-o-border-radius: 6px; -ms-border-radius: 6px;	-khtml-border-radius: 6px;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+.radius-50 {
+	border-radius: 0 0.5em 0.5em 0.5em; -moz-border-radius: 0 0.5em 0.5em 0.5em;	-webkit-border-radius: 0 0.5em 0.5em 0.5em;
+	-o-border-radius: 0 0.5em 0.5em 0.5em; -ms-border-radius: 0 0.5em 0.5em 0.5em;	-khtml-border-radius: 0 0.5em 0.5em 0.5em;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);
+}
+
+.text-overflow {
+ overflow: hidden; text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+/* ===== shadow =====
+値：水平方向のオフセット、垂直方向のオフセット、ブラー（ぼかし）の半径、シャドウの距離、シャドウのカラー、「inset」で内側
+*/
+
+.label-shadow-lr, .label-shadow-l, .label-shadow-r {
+ position: relative;
+ width: 100%;
+ background: #FFF;
+ margin:0 auto 10px;
+ color: rgba(0,0,0,0.8);
+	z-index:1;
+}
+
+.label-shadow-lr:before, .label-shadow-lr:after {
+ position: absolute;
+	content: "";
+ top: 10px; left: 10px;
+ width: 50%; max-width:300px; height:10px;
+ background: rgba(0, 0, 0, 0.6);
+ z-index: -1; 
+ -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.6);
+ -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.6);
+ box-shadow: 0 15px 10px rgba(0, 0, 0, 0.6);
+ -webkit-transform: rotate(-3deg);
+ -moz-transform: rotate(-3deg);
+ -o-transform: rotate(-3deg);
+ -ms-transform: rotate(-3deg);
+ transform: rotate(-3deg);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+
+.label-shadow-lr:after {
+ top: 10px; right: 10px; left: auto;
+ -webkit-transform: rotate(3deg);
+ -moz-transform: rotate(3deg);
+ -o-transform: rotate(3deg);
+ -ms-transform: rotate(3deg);
+ transform: rotate(3deg);
+}
+
+.label-shadow-r:after {
+ position: absolute;
+	content: "";
+ top: 10px; right: 10px; left: auto;
+ width: 50%; max-width:300px; height:10px;
+ background: rgba(0, 0, 0, 0.7);
+ z-index: -1; 
+ -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+ -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+ box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+ -webkit-transform: rotate(3deg);
+ -moz-transform: rotate(3deg);
+ -o-transform: rotate(3deg);
+ -ms-transform: rotate(3deg);
+ transform: rotate(3deg);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+
+.label-shadow-l:before {
+ position: absolute;
+	content: "";
+ top: 10px; left: 10px;
+ width: 50%; max-width:300px; height:10px;
+ background: rgba(0, 0, 0, 0.7);
+ z-index: -1; 
+ -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+ -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+ box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+ -webkit-transform: rotate(-3deg);
+ -moz-transform: rotate(-3deg);
+ -o-transform: rotate(-3deg);
+ -ms-transform: rotate(-3deg);
+ transform: rotate(-3deg);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+
+.box-shadow-rb {
+ -webkit-box-shadow: 3px 3px 3px rgba(0,0,0, 0.7);
+ -moz-box-shadow: 3px 3px 3px rgba(0,0,0, 0.7);
+ box-shadow: 3px 3px 3px rgba(0,0,0, 0.7);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+.box-inside-shadow {
+ -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0, 0.7) inset;
+ -moz-box-shadow: 2px 2px 2px 0 rgba(0,0,0, 0.7) inset;
+ box-shadow: 2px 2px 2px 0 rgba(0,0,0, 0.7) inset;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+
+.text-shadow-bk {
+ text-shadow: 1px 1px 2px rgba(0,0,0, 0.6);
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+.text-shadow-wt {
+ text-shadow: 1px 1px 2px #FFF;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+.text-shadow-red {
+ text-shadow: 1px 1px 2px #F99;
+	behavior: url(http://common.s1jp.com/js/htc/ie-css3.htc);	
+}
+
+/* ===== Web fonts =====  http://www.google.com/webfonts#ChoosePlace:select */
+/* latin code(@font-face)情報を確認するには */
+/* Google Fonts で取得したLinkコードにあるＵＲＬ（https://fonts.googleapis.com/css?family=***）を直接ブラウザに入力する */
+
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v5/w5P-SI7QJQSDqB3GziL8XZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v4/HrI4ZJpJ3Fh0wa5ofYMK8QzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.font-face1 { font-family: 'Righteous', sans-serif; }
+.font-face2 { font-family: 'Poiret One', sans-serif; }
+.font-Impact { font-family: Impact, sans-serif; font-weight: normal; }
+
+
+/**/
+
+@mixin font-smoothing($value: on){
+ @if $value == on {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ } @else {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+ }
+}

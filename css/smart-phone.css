@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* Smart phone CSS Document */
+
+img, iframe { max-width:100%; }
+
+html body#home #wrap #all header {
+ box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+ -webkit-box-shadow: 0px 0 10px rgba(0,0,0,.6);
+ -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+	-o-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+	-ms-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+html body #wrap #all header #header_wrap h1 {
+	margin:0; padding:0;
+}
+html body #wrap #all header #header_wrap h1 a {
+	width:100%; height:60px;
+	margin:0 0 10px 0;	padding:0;
+	background-image:url(http://common.s1jp.com/img/logo-sp.svg);
+	background-position:center center;
+	color:#000;
+	display:block;
+}
+html body #wrap #all header #header_wrap h2 {
+	font-size:0.8rem;
+	color:#000;
+	margin:0;	padding:0;
+}
+
+html body#home #wrap #all nav#main {
+	min-width:100%;
+	width: auto;
+	max-width:100%;
+	height:auto;
+	margin:0; padding:0;
+	margin-bottom:20px;
+	display:block;
+}
+html body#home #wrap #all nav#main h3,
+html body#home #wrap #all nav#main ul li {
+	border:none;
+	min-width:100%;
+	width: auto;
+	max-width:100%;
+	display:block;
+}
+html body#home #wrap #all nav#main h3 {
+	height:40px;
+	line-height:40px;
+	margin:0; padding:0; text-align:center;
+}
+html body#home #wrap #all nav#main.grade h3 {
+	border-radius:0;
+	-moz-border-radius:0; -webkit-border-radius:0;	-khtml-border-radius:0;
+	-o-border-radius:0; -ms-border-radius:0;
+}
+html body#home #wrap #all nav#main ul li a {
+	border-bottom:1px solid #777;
+	height:60px;
+	font-size:1.2rem;
+	line-height:60px;
+}
+html body#home #wrap #all nav#main ul li.home,
+html body#home #wrap #all nav#main.grade ul li ul,
+html body#home #wrap #all nav#main ul li ul {
+	width:0; height:0;
+	display:none;
+	}
+
+footer .footer_wrap {}
+
+/* ===== /ページ全体設定 ===== */
+
+/* ===== 基本タグ設定 ===== */
+
+a {}
+a:hover {} /* リンク文字のロールオーバー色 */
+
+img, fieldset {}
+img {}
+
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {}
+h1,h2,h3,h4,h5,h6 {}
+h1,h2 {}
+h3,h4 {}
+h5,h6 {}
+
+ul, ol {}
+p, li, dd {}
+
+em {}
+
+input, textarea {}
+input[type="submit"] {}
+input[type="submit"]:hover {}
+
+/* ===== /基本タグ設定 ===== */
+
+
+/* ===== 以下、サイト共通ブロック設定 ===== */
+
+/* ----- HEADER ----- */
+header {}
+header #header_wrap a {}
+header #header_wrap a:hover {}
+header #header_wrap {}
+header #header_wrap h1 {}
+header #header_wrap h2 {}
+#header_wrap h1 a {}
+
+/* ----- /HEADER ----- */
+
+/* ----- FOOTER ----- */
+
+footer {}
+footer .footer_wrap {}
+/* ----- /FOOTER ----- */
+
+/* ----- MAIN MENU ----- */
+
+nav#main {}
+
+
+/* ----- / MAIN MENU ----- */
+
+
+/* ----- CONTENTS ----- */
+
+
+#container section {}
+section {}
+section#main, section#main-two_column { clear:both; width:auto; }
+
+#contents {}
+
+.list dl dt, .list dl dd, .list dl dd ul, .list dl dd ul li ul {
+	clear:both;
+	width: auto;
+	max-width:100%;
+	line-height:1em;
+	margin:0 0 20px 20px;
+}
+.list dl ul li, .list dl ul ul li {
+	clear:both;
+	padding:0;
+}
+.list dl dt a, .list dl dd a, .list dl ul li a, .list dl ul ul li a {
+	clear:both;
+	padding:0 5px 40px 5px;
+	display:block;
+}
+.list dl {
+	width: auto;
+	max-width: 100%;
+	line-height:2em;
+}
+.list dl dt {
+	margin-bottom:5px;
+}
+.list dl dt.home {
+	margin-left:0;
+}
+.list dl dd {
+}
+.list dl ul {
+}

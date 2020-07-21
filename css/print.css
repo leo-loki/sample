@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, body.white-base, body.black-base {
+	background-image:none;
+	background-color:#FFF;
+	color:#000;
+}
+
+html body #wrap #all { display:none; }
+html body #wrap #ss { width:953px; height:auto; margin:0 auto; display:block; }
+
+.screen { display: none; visibility: hidden; }
+.print { display:block; visibility:visible; }
+
+#container div.print { display:block; visibility:visible; }
+
+div#navi {
+	position:absolute;
+	top:0; left:0;
+	float:none;
+}
+
+.footer {
+	margin:0; padding:0; border:none;
+	height:110px; z-index:99;
+}

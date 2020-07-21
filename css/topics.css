@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* ----- TOPICS (RSS FEEDS) ----- */
+
+#topics { width:auto; min-width:300px; max-width:100%; display:block; }
+#topics dl { line-height:1.6em; }
+#topics dl dt { float:left;	width:95px; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; }
+#topics dl dd { min-width:180px; width:auto; overflow:hidden; text-overflow: ellipsis; white-space:nowrap; }
+
+#topics #feedHead {
+	position: relative;
+	width: 100%;
+	background: #FFF;
+	margin: 0 auto 10px;
+	color: rgba(0,0,0,0.8);
+	z-index: 1;
+}
+#topics #feedHead h2 {	background-color: #DDD;	color: #000; }
+#topics #feedHead h2 a {	color: #000; }
+
+#feedText { margin:10px 0; padding-left:10px; height:115px; overflow:auto; }

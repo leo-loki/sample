@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* プログレスバー */
+
+#ad{
+		margin-top:40px;
+		padding-left:10px;
+	}
+	#pageContent{
+		width:960px;
+		margin:0 auto;
+		text-align:left;
+		height: auto;
+	}
+	#ajax_progressPane{
+		width: 100%;
+		height: auto; min-height:100%;
+		background-color:#000;
+		z-index:5000;
+		position:absolute;
+		left:0px;
+		top:0px;
+		
+	}
+	#ajax_progressBar_bg{
+		position:absolute;
+		left:50%;
+		top:50%;
+		width:300px;
+		height:14px;
+		border:1px solid #666;
+		background-color:#333;
+		margin-left:-150px;	
+		margin-top:-20px;
+		text-align:center;
+	}
+	#ajax_progressBar_outer{
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:0px;	
+		height:100%;
+		overflow:hidden;	
+	}
+	
+	#ajax_progressBar{
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:300px;
+		background-color: #600;
+		filter: Alpha(Opacity=0, FinishOpacity=100,Style=1,StartX=0, StartY=0, FinishX=200,FinishY=20) ;
+		height:100%;
+		z-index:5000;
+	}
+	#ajax_progressBar_txt{
+		color:#FFF;
+		z-index:10000;
+		width:100%;
+		height:100%;
+		left:0px;
+		top:0px;
+		position:absolute;		
+		font-family:arial;
+		font-size:0.8em;
+		line-height:14px;	/* プログレスバーと同じ高さに */
+	}
+
+/* / プログレスバー */
+
+	.imageSlideshowHolder,.imageSlideshowHolder_left{
+		margin:0;	/* 余白 */
+		width:960px;	/* 画像の幅 */
+		height:240px;	/* 画像の高さ */
+		
+		position:relative;	/* 変更不可 */
+	}
+	.leftFloatingDiv{
+		float:left;
+		width:160px;
+		height:110px;
+	}
+	/* 以下は変更不可 */
+	.imageSlideshowHolder img{
+		position:absolute;
+		left:0px;
+		top:0px;
+	}
+	
+	/**/
+
+#dhtmlgoodies_slideshow{
+		width:960px;	/* スライドショー全体の幅 */
+		position:absolute;
+		top:0; left:0;
+}
+	
+	#previewPane{
+		position:relative;
+		/* border:1px solid #CCCCCC;
+		margin-bottom:10px;
+		padding-top:10px;	*/
+		text-align:center;
+		vertical-align:middle;
+
+		
+		/* CSS HACK */
+		height: 252px;	/* IE 5.x対応用 */
+		height/* */:/**/240px;	/* 他のブラウザ用 */
+		height: /**/240px;
+				
+	}
+	
+	/*#previewPane img{	line-height:400px;	}*/
+	
+	#previewPane #largeImageCaption{	/* 拡大写真のキャプション */
+		font-style:italic;
+		text-align:center;
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		font-size:0.9em;
+	}
+	#galleryContainer{
+		position:relative;
+		height:82px;	/* 画像の高さ + 2 */
+		padding:1px;
+		border:1px solid #666;
+		overflow:hidden;
+		
+		/* CSS HACK */
+		height: 84px;	/* IE 5.x対応用 - ボーダーの左右の幅の分（2ピクセル）だけ足す */
+		height/* */:/**/82px;	/* Other browsers */
+		height: /**/82px;
+				
+	}
+#arrow_left{
+	position:absolute;
+	width:30px;
+	height:80px;
+	left:0px;
+	background-color: #333;
+	padding:1px;
+	display:block;
+	z-index:10;
+}
+#arrow_right{
+ position:absolute;
+ width:30px; height:80px;
+ right:0px;
+ z-index:10;
+ background-color: #333;
+ padding:1px;		
+ display:block;
+}
+	#theImages{
+		position:absolute;
+		height:100px;
+		left:30px;
+		width:9999px;
+		
+	}
+	#theImages #slideEnd{
+		float:left;
+	}
+	#theImages img{
+		float:left;
+		padding:1px;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+		cursor:pointer;
+		border:0px;
+	}
+
+	#waitMessage{
+		display:none;
+		position:absolute;
+		left:240px;
+		top:200px;
+		background-color:#FFF;
+		border:3px double #000;
+		padding:4px;
+		color:#555;
+		font-size:0.9em;
+		font-family:arial;	
+	}
+	
+	#theImages .imageCaption{
+		display:none;
+	}

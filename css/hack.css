@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* ORIGINAL HUCK */
+
+/* =========================================
+*  overflowで横スクロールを表示させない
+*  ========================================= */
+div.script {
+ margin:1em 0; padding:0;
+ overflow:auto;
+ width:100%;
+ border:1px dotted orange;
+ background-color:#f7f7f7;
+}
+div.script pre {
+ margin:10px; padding:0;
+ font:normal 11px verdana,sans-serif;
+}
+div.script pre.wrap {
+ /* Browser specific (not valid) styles to make preformatted text wrap */
+ white-space: pre-wrap; /* css-3 */
+ white-space: -moz-pre-wrap;/* Mozilla, since 1999 */
+ white-space: -pre-wrap;/* Opera 4-6 */
+ white-space: -o-pre-wrap;/* Opera 7 */
+ word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+/* =========================================
+*  フォントフェイス ※IEではEOTファイル必須
+*  ========================================= */
+@font-face {
+ font-family: 'EfonRegular';
+ src: url('EFON.eot?');
+ src: local('Efon Regular'), local('Efon'), url('webfonts/EFON.TTF') format('truetype');
+}
+@font-face {
+ font-family: 'SnigletRegular';
+ src: url('Sniglet.eot?');
+ src: local('Sniglet Regular'), local('Sniglet'), url('webfonts/Sniglet.ttf') format('truetype');
+}
+#d_fontface {
+ font:30px/30px 'SnigletRegular', Arial, sans-serif;
+ letter-spacing: 0;
+}
+#bodoni {
+ font:30px/30px 'Bodoni', serif;
+ letter-spacing: 0;
+}
+#minotaur {
+ font:30px/30px 'Minotaur', serif;
+ letter-spacing: 0;
+}
+#d_fontface dt,
+#d_fontface dd {
+ margin:10px; padding:0;
+}
+#d_fontface span {
+ font: 30px/30px 'EfonRegular', Arial, sans-serif;
+ letter-spacing: 0;
+}
+#d_fontface p {
+ font-size:17px;
+ line-height:25px;
+}

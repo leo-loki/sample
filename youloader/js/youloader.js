@@ -11,7 +11,7 @@ Version and Revision contents -----
 */
 
 $(function() {
-	var vid ='VReqmcLhESE'; /* YT Movies ID setting */
+	var vid ='c3uJUrvI2zc'; /* YT Movies ID setting */
 	var player;
 	var win = $(window);
 	var area = $('#player');
